@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.vue is a Vue instance 1`] = `
+<v-app-stub id="app">
+  <nav-drawer-stub></nav-drawer-stub>
+  <app-bar-stub></app-bar-stub>
+  <v-content-stub tag="main">
+    <v-container-stub tag="div" fluid="true">
+      <router-view></router-view>
+    </v-container-stub>
+  </v-content-stub>
+  <planet-modal-stub></planet-modal-stub>
+</v-app-stub>
+`;

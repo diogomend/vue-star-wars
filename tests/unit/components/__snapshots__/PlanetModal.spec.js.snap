@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlanetModal.vue is a Vue instance 1`] = `
+<v-dialog max-width="290" persistent="">
+  <v-card light="">
+    <div class="text-center">
+      <v-progress-circular size="50" color="primary" indeterminate="" class="mt-10 mb-10"></v-progress-circular>
+    </div>
+  </v-card>
+</v-dialog>
+`;

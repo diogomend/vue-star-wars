@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavDrawer.vue is a Vue instance 1`] = `
+<v-navigation-drawer app="">
+  <v-list nav="">
+    <v-list-item two-line="">
+      <v-list-item-content>
+        <v-list-item-title>Diogo Mendonça</v-list-item-title>
+        <v-list-item-subtitle>Star Wars app</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+    <v-divider></v-divider>
+    <v-list-item-group active-class="text--accent-4">
+      <v-list-item to="/">
+        <v-list-item-title>Home</v-list-item-title>
+      </v-list-item>
+      <v-list-item to="/about">
+        <v-list-item-title>About</v-list-item-title>
+      </v-list-item>
+    </v-list-item-group>
+  </v-list>
+</v-navigation-drawer>
+`;
