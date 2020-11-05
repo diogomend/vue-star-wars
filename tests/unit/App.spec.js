@@ -1,37 +1,37 @@
-import Vuetify from 'vuetify';
-import Vue from 'vue';
+import Vuetify from "vuetify";
+import Vue from "vue";
 import Vuex from "vuex";
 import App from "@/App.vue";
-import { shallowMount } from "@vue/test-utils"
-import { storeOptions } from "@/store/index"
+import { shallowMount } from "@vue/test-utils";
+import { storeOptions } from "@/store/index";
 Vue.use(Vuex);
 Vue.use(Vuetify);
 
 describe("App.vue", () => {
-    let store;
+  let store;
 
-    beforeEach(() => {
-        jest.clearAllMocks();
-        store = new Vuex.Store(storeOptions);
-      });
+  beforeEach(() => {
+    jest.clearAllMocks();
+    store = new Vuex.Store(storeOptions);
+  });
 
-      it("is a Vue instance", () => {
-        const wrapper = shallowMount(App, {
-          store
-        });
-    
-        const template = wrapper.html();
-        expect(template).toMatchSnapshot();
-      });
-      it("toggleMenu should change menu state", () => {
-        const wrapper = shallowMount(App, {
-          store,
-          data: {
-              menu: false
-          }
-        });
-    
-        wrapper.vm.toggleMenu();
-        expect(wrapper.vm.menu).toBeTruthy();
-      });
-})
+  it("is a Vue instance", () => {
+    const wrapper = shallowMount(App, {
+      store
+    });
+
+    const template = wrapper.html();
+    expect(template).toMatchSnapshot();
+  });
+  it("toggleMenu should change menu state", () => {
+    const wrapper = shallowMount(App, {
+      store,
+      data: {
+        menu: false
+      }
+    });
+
+    wrapper.vm.toggleMenu();
+    expect(wrapper.vm.menu).toBeTruthy();
+  });
+});

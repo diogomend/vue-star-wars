@@ -1,11 +1,10 @@
 import swapi from "@/apis/swapi";
-import storageHelper from "@/helpers/localStorage"
-
+import storageHelper from "@/helpers/localStorage";
 
 const actions = {
   fetchPeople: async ({ commit }) => {
     const storedPeople = storageHelper.getFromStorage();
-    
+
     if (storedPeople && storedPeople.length) {
       commit("SET_PEOPLE", JSON.parse(storedPeople));
       return;
@@ -36,7 +35,7 @@ export default {
   mutations
 };
 
-export const getAllPeople = async (commit) => {
+export const getAllPeople = async commit => {
   let currentPage = 1;
   let hasNextPage = true;
   let people = [];

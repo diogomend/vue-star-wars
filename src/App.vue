@@ -3,11 +3,11 @@
     <!--<v-main>-->
     <nav-drawer :show="menu" />
     <app-bar @toggleMenu="toggleMenu" />
-    <v-content>
+    <v-main>
       <v-container fluid>
         <router-view></router-view>
       </v-container>
-    </v-content>
+    </v-main>
     <planet-modal />
   </v-app>
 </template>
